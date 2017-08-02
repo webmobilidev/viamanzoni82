@@ -1,0 +1,44 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "xxxxx",
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        }
+    },
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.viamanzoni82.viamanzoni82"
+        }
+    }
+}
