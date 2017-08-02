@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.designbest.viamanzoni82" version="6.0.145" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Via Manzoni 82</name>
+    <description>
+Questa applicazione ti permette di portare sempre con te, sul tuo Smartphone o Tablet, il catalogo d'arredamento di Via Manzoni 82, il tuo negozio di fiducia di design a Napoli (NA).
+Ricerca l'arredo di design per la tua casa attraverso le categorie di prodotto (tavoli, sedie, divani, etc.) o con la ricerca testuale libera. Sfoglia le migliori marche di design italiano ed internazionale proposte da Via Manzoni 82. 
+Tieniti aggiornato con tutte le novità presentate alle fiere di settore nell'apposita sezione Novità.
+All'interno delle schede prodotto trova tutti i dettagli utili per orientarti nella tua scelta: nome e descrizione del prodotto, misure, materiali e caratteristiche. 
+Con la gallery guarda il prodotto d'arredo da te selezionato nei minimi dettagli.
+</description>
+    <author email="info@viamanzoni82.it" href="http://www.viamanzoni82.it">
+       Via Manzoni 82
+    </author>
+    <access launch-external="yes" origin="maps:*" />
+    <access launch-external="yes" origin="geo:*" />
+    <content src="index.html" />
+    <icon src="icon.png" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
+        <true />
+    </config-file>
+    <config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
+        <false />
+    </config-file>
+    <config-file parent="LSApplicationQueriesSchemes" platform="ios" target="*-Info.plist">
+        <array>
+            <string>whatsapp://</string>
+        </array>
+    </config-file>
+    <icon height="29" platform="ios" src="www/res/icons/ios/icon-small.png" width="29" />
+    <icon height="58" platform="ios" src="www/res/icons/ios/icon-small-2x.png" width="58" />
+    <icon height="87" platform="ios" src="www/res/icons/ios/icon-small-3x.png" width="87" />
+    <icon height="40" platform="ios" src="www/res/icons/ios/icon-40.png" width="40" />
+    <icon height="80" platform="ios" src="www/res/icons/ios/icon-40-2x.png" width="80" />
+    <icon height="50" platform="ios" src="www/res/icons/ios/icon-50.png" width="50" />
+    <icon height="100" platform="ios" src="www/res/icons/ios/icon-50-2x.png" width="100" />
+    <icon height="57" platform="ios" src="www/res/icons/ios/icon-57.png" width="57" />
+    <icon height="114" platform="ios" src="www/res/icons/ios/icon-57-2x.png" width="114" />
+    <icon height="60" platform="ios" src="www/res/icons/ios/icon-60.png" width="60" />
+    <icon height="120" platform="ios" src="www/res/icons/ios/icon-60-2x.png" width="120" />
+    <icon height="72" platform="ios" src="www/res/icons/ios/icon-72.png" width="72" />
+    <icon height="144" platform="ios" src="www/res/icons/ios/icon-72-2x.png" width="144" />
+    <icon height="76" platform="ios" src="www/res/icons/ios/icon-76.png" width="76" />
+    <icon height="152" platform="ios" src="www/res/icons/ios/icon-76-2x.png" width="152" />
+    <icon height="167" platform="ios" src="www/res/icons/ios/icon-167.png" width="167" />
+    <icon height="180" platform="ios" src="www/res/icons/ios/180.png" width="180" />
+    <icon height="512" platform="ios" src="www/res/icons/ios/icon-512.png" width="512" />
+    <icon height="1024" platform="ios" src="www/res/icons/ios/icon-1024.png" width="1024" />
+    <splash height="1136" platform="ios" src="www/res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+    <splash height="1334" platform="ios" src="www/res/screen/ios/screen-ipad-667h.png" width="750" />
+    <splash height="2208" platform="ios" src="www/res/screen/ios/screen-ipad-736h.png" width="1242" />
+    <splash height="2048" platform="ios" src="www/res/screen/ios/screen-iphone-portrait-2x.png" width="1536" />
+    <splash height="1024" platform="ios" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
+    <splash height="960" platform="ios" src="www/res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
+    <splash height="480" platform="ios" src="www/res/screen/ios/screen-iphone-portrait.png" width="320" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <allow-intent href="maps:*" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+</widget>

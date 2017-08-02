@@ -8,44 +8,37 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "phonegap-plugin-push": {
             "SENDER_ID": "xxxxx",
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "cordova-custom-config": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
-        },
-        "cordova-plugin-contacts": {
-            "CONTACTS_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         },
         "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         }
     },
     "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
-        },
         "es6-promise-plugin": {
-            "PACKAGE_NAME": "com.designbest.mobilmania"
+            "PACKAGE_NAME": "com.designbest.viamanzoni82"
         }
     }
 }
