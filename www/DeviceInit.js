@@ -31,7 +31,7 @@ function DeviceInitializator() {
   function tokenHandler(result) {
     // Your iOS push server needs to know the token before it can push to this device
     // here is where you might want to send it the token for later use.
-    var reg = window.localStorage.getItem("Registered");
+    var reg = window.localStorage.getItem("Registered") != null ? window.localStorage.getItem("Registered"): 0;
     if (reg != result)
       pushManager.sendRegID(result, device.platform);
   }
@@ -43,7 +43,7 @@ function DeviceInitializator() {
   function errorHandler(error) {
     //$("#app-status-ul").append('<li>error:'+ error +'</li>');
     //alert("errore");
-    console.log(error);
+    alert(error);
   }
 
   function getTpID() {
@@ -105,7 +105,7 @@ function DeviceInitializator() {
             console.log('Error: ' + status);
         }
 
-	window.cache.clear( success, error );
+	//window.cache.clear( success, error );
 	
   }
 
@@ -141,18 +141,57 @@ function DeviceInitializator() {
     if (typeof onDevice !== 'undefined') {
       pushManager = new PushManager(tpID, domain);
       var appID = pushManager.getAppID(tpID);
-      pushNotification = window.plugins.pushNotification;
-      if (device.platform == 'android' || device.platform == 'Android' || device.platform == 'amazon-fireos')
-        pushNotification.register(successHandler, errorHandler, { "senderID": appID, "ecb": "pushManager.onNotification" });		// required!
-      else
-        pushNotification.register(tokenHandler, errorHandler, { "badge": "true", "sound": "true", "alert": "true", "ecb": "pushManager.onNotificationAPN" });	// required!
+      try{
+        pushNotification = window.plugins.pushNotification;
+        if (device.platform == 'android' || device.platform == 'Android' || device.platform == 'amazon-fireos')
+          pushNotification.register(successHandler, errorHandler, { "senderID": appID, "ecb": "pushManager.onNotification" });		// required!
+        else
+          pushNotification.register(tokenHandler, errorHandler, { "badge": "true", "sound": "true", "alert": "true", "ecb": "pushManager.onNotificationAPN" });	// required!
+      } 
+      catch(error) {
+        var push = PushNotification.init({
+          android: {
+              senderID: appID
+          },
+          browser: {
+              pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+          },
+          ios: {
+              alert: "true",
+              badge: "true",
+              sound: "default",
+              clearBadge: "true"
+          },
+          windows: {}
+        });
+        
+        push.on('registration', function(data) {
+          pushManager.registerNG(data);
+        });
+        
+        push.on('notification', function(data) {
+            if (device.platform == 'android' || device.platform == 'Android' || device.platform == 'amazon-fireos')      
+              pushManager.notificationAndroidNG(data)
+            else
+              pushManager.onNotificationAPN_NG(data);
+            // data.message,
+            // data.title,
+            // data.count,
+            // data.sound,
+            // data.image,
+            // data.additionalData
+            push.finish(function() {
+                console.log("processing of push data is finished");
+            });
+        });
+      }
     }
 
     /** Istanza di TP_MobileEngine */
     tp = new TP_MobileEngine();
 
   }).fail(function () {
-    console.log("Qualcosa non va codroipo ornando campa");
+    alert("Qualcosa non va codroipo ornando campa");
   });
 }
 

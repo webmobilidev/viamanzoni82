@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Via Manzoni 82</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="local/Scuro.min.css"/>
+    <link rel="stylesheet" type="text/css" href="local/jquery.mobile.structure-1.3.2.min.css" />
+    <link rel="stylesheet" type="text/css" href="local/Mobile.css" />
+    <script type="text/javascript" src="local/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="local/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript" src="local/content-loader.js"></script>
+</head>
+<body>
+    <div data-role="page" id="foo">
+        <header data-role="header" id="header" data-position="fixed" >
+            <a href="#panelleft" id="buttonleft" data-iconpos="notext" data-icon="home"
+                data-corners="false" data-shadow="false" data-iconshadow="false" style="position:absolute" ></a>
+            <h1 class="ui-title"></h1>
+            <a href="#panelright" target="_blank" class="getAmbientByShop" id="buttonright" data-iconpos="notext"
+                data-icon="bars" data-corners="false" data-iconshadow="false" data-shadow="false"></a>
+        </header>
+        <aside data-role="panel" id="panelleft" data-theme="a">
+        </aside>
+        <section data-role="content" id="content" >
+        <div id="mainLogo" class="ui-grid-solo">
+          <div class="ui-block-a">
+              <img src="local/shop/logo_highres.png" alt="logo">
+          </div>
+        </div> 
+        
+        <div class="alert-no-connection">
+          <div id="alert">
+            <h3>Nessuna connessione disponibile</h3>
+          </div>                
+        </div>
+        </section>
+        <aside data-role="panel" id="panelright" data-theme="a" data-position="right">
+        </aside>
+
+        <footer data-role="footer" id="footer" class="fullTextBar">
+            
+        </footer>
+    </div>
+
+    <div data-role="page" id="bar">
+	    <header data-role="header" id="barTitle" data-position="fixed">
+		    <h1 class="ui-title"></h1>
+            <a class="ui-btn-right" data-iconpos="notext"
+                data-icon="delete" data-corners="true" data-shadow="true" data-rel="back"></a>
+        </header>
+
+	    <section data-role="content" id="barContent">
+	    </section>
+    </div>
+</body>
+</html>

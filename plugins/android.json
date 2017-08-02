@@ -1,0 +1,50 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "xxxxx",
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.designbest.mobilmania"
+        }
+    }
+}
